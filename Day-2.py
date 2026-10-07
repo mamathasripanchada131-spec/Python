@@ -63,9 +63,22 @@ print(a/b) #/ --> Float Division (answer is always in float value)
 print(a//b) #Flooring Division (Integer division) returns quotient
 print(a%b) #Moduls --> returns remainder
 '''
-
+#Raju purchased Shoes with price 1000,discount 15%,
+#now how much Raju has to pay?
 
 price = 1000
 discount = 0.15
 final_price = price -(price*discount)
+print(final_price)
+
+#Vijay went to hotel for dinner his bill is 2500,GST applicable is 5%
+#hotel manager has given him 5% discount. how much he has to pay?
+
+price = 2500
+gst = 0.05
+discount = 0.05
+#first apply discount
+final_price = price -(price*discount)
+#print(final_price)
+final_price = final_price + (final_price*gst)
 print(final_price)
