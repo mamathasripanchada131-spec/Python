@@ -97,6 +97,7 @@ print(a,b,c,sep=":",end="\t") #here end = tab space character
 print("gowthu","vizag",end=" ") #here end = space character
 print(45,3.4)
 
+
 # 1) using commas in print()
 name = "codegnan";branch ="vizag";batch ='PFS-VSP-007'
 print(name,"is in",branch)
@@ -110,3 +111,18 @@ place ="vizag"
 print("age = %d| price = %f | place = %s"%(age,price,place))
 print("price is %.f"%price)# in this case complete decimal part is wiped
 print("price is %.2f"%price)# rounding off to two decimals
+
+#3) Usage of string formatting --> str.format()
+
+name = "Codegnan";branch = "Vizag";age = 8
+print("{} is in {} and its of {} years in Edtech Industry".format(name,branch,age))
+
+a,b = 2,45
+print("{1},{0}".format(a,b))
+print("value of a is {} and value of b is{}".format(a,b))
+
+#f-string notation --> Python 3.9+ versions
+print(f'{name} is in {branch}')
+#make sure to denote the variable only in curly braces
+print(f'value of a is {a} and b is {b}')
+print(f'"Codegnan is in {branch} and of {age}years in Trainings"')
